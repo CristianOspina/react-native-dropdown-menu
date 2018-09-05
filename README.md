@@ -1,4 +1,6 @@
 # react-native-dropdown-menu
+Fork with **titles** support: in the initial state it shows a default title/placeholder for each dropdown, useful to specify for what the dropdown is about.
+
 
 A `<DropdownMenu>` component for react-native.Easy to use.
 
@@ -25,8 +27,9 @@ export default class Demo extends Component {
       text: ''
     };
   }
-  
+
   render() {
+    var titles = ["Langs 1", "Langs 2", "Langs 3"];
     var data = [["C", "Java", "JavaScript", "PHP"], ["Python", "Ruby"], ["Swift", "Objective-C"]];
     return (
       <View style={{flex: 1}}>
@@ -36,12 +39,13 @@ export default class Demo extends Component {
           bgColor={'white'}
           tintColor={'#666666'}
           activityTintColor={'green'}
-          // arrowImg={}      
-          // checkImage={}   
+          // arrowImg={}
+          // checkImage={}
           // optionTextStyle={{color: '#333333'}}
-          // titleStyle={{color: '#333333'}} 
-          // maxHeight={300} 
+          // titleStyle={{color: '#333333'}}
+          // maxHeight={300}
           handler={(selection, row) => this.setState({text: data[selection][row]})}
+          titles={titles}
           data={data}
         >
 
@@ -55,6 +59,6 @@ export default class Demo extends Component {
       </View>
     );
   }
-  
+
 }
 ```
