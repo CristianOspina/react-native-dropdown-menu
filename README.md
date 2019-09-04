@@ -2,7 +2,7 @@
 Fork with **titles** support: in the initial state it shows a default title/placeholder for each dropdown, useful to specify for what the dropdown is about.
 
 
-A `<DropdownMenu>` component for react-native.Easy to use.
+A `<DropdownMenu>` component for react-native ( iOS ).  Easy to use.   
 
  ![image](https://github.com/WheelerLee/react-native-dropdown-menu/blob/master/screenshot1.gif?raw=true)
 
